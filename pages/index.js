@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../src/components/Header';
 import Landling from '../src/components/Landling';
+import About from '../src/components/About';
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
       </Head>
       <Header />
       <Landling />
-      {/* landing */}
-      {/* about me */}
+      <About />
       {/* work experience */}
       {/* skill scroller */}
       {/* contact me */}
