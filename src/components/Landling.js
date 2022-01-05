@@ -12,7 +12,10 @@ function Landling() {
       <div className="flex flex-col z-10">
         <h1 className="text-4xl md:text-6xl text-gray-200">
           <TypeWriter typing={0.5}>
-            I'm Peter Yang<p className="text-white text-base">Software Engineer</p>
+            I'm Peter Yang
+            <p className="text-white text-base mt-1">
+              Software Engineer base in Taiwan, facing to world!
+            </p>
           </TypeWriter>
         </h1>
       </div>
