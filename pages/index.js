@@ -9,7 +9,7 @@ import ContactMe from '../src/components/ContactMe';
 
 export default function Home() {
   return (
-    <div className="bg-slate-400 h-screen font-mono w-full">
+    <div className="bg-bluedark font-mono w-full">
       <Head>
         <title>Peter's Web Lab</title>
       </Head>
@@ -17,6 +17,7 @@ export default function Home() {
       <Landling />
       <About />
       <Skills />
+      <WorkExperience />
       <Projects />
       <ContactMe />
     </div>

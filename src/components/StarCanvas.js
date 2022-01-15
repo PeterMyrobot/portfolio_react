@@ -62,7 +62,7 @@ function StarCanvas() {
   const movingStars = (distance) => {
     const nextStar = starsRef.current.map((star) => {
       const newDis = star.z - distance;
-      while (newDis <= -50) {
+      while (newDis <= -EYES_TO_SCREEN) {
         newDis += 300;
       }
       return {
@@ -80,9 +80,8 @@ function StarCanvas() {
     movingStars(elapsed * FLY_SPEED);
     clear();
     drawStars();
-    // requestAnimationFrame(tick);
-    // clear();
   };
+
   const requestIdRef = useRef(null);
 
   const tick = (time) => {
