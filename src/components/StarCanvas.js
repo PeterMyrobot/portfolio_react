@@ -99,7 +99,7 @@ function StarCanvas() {
       cancelAnimationFrame(requestIdRef.current);
     };
   }, []);
-  return <canvas ref={canvasRef} />;
+  return <canvas className="absolute w-full h-screen" ref={canvasRef} />;
 }
 
 export default StarCanvas;

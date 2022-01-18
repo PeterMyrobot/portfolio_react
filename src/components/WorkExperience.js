@@ -1,3 +1,5 @@
+import life from '../../public/images/projects/life.png';
+
 const EXPERIENCE = [
   {
     companyName: 'Shoalter Technology',
@@ -67,14 +69,14 @@ const EXPERIENCE = [
 function WorkExperience() {
   const experience = EXPERIENCE.map((company) => {
     return (
-      <div className=" flex flex-col text-bluedark mb-4">
+      <div className=" flex flex-col text-bluedark mb-4" key={company.companyName}>
         <div className="flex justify-start sm:justify-center items-end">
-          <div className="text-sm sm:text-xl lg:text-2xl text-center">{company.info[0].title}</div>
+          <div className="text-xs sm:text-xl lg:text-2xl text-center">{company.info[0].title}</div>
           <div className="ml-4 text-xs sm:text-base">{company.companyName}</div>
         </div>
         <div className="flex text-xs sm:text-base justify-start sm:justify-center items-end">
-          <span className="text-bluedark/40">{company.info[0].during}</span>
-          <span className="ml-4 text-c3 ">{company.location}</span>
+          <span className="text-bluedark/75">{company.info[0].during}</span>
+          <span className="ml-4 text-c4/75 ">{company.location}</span>
         </div>
       </div>
     );
@@ -84,7 +86,7 @@ function WorkExperience() {
       <h1 className="text-xl text-left text-bluedark border-c4 border-b-2 sm:text-center font-medium">
         WORK
       </h1>
-      <div className="flex flex-col w-full my-4 bg-c2/10 p-2">{experience}</div>
+      <div className="flex flex-col w-full mt-4 bg-c2/10 p-2">{experience}</div>
     </div>
   );
 }

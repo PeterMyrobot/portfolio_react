@@ -31,7 +31,7 @@ const skills = [
   { icon: SiGit, label: 'Git', group: 'general' },
   { icon: SiCplusplus, label: 'C++', group: 'general' },
   { icon: SiArduino, label: 'Arduino', group: 'general' },
-  { icon: SiElectron, label: 'Arduino', group: 'general' },
+  { icon: SiElectron, label: 'Electron', group: 'general' },
   { icon: SiSwift, label: 'Swift', group: 'Mobile' },
   { icon: SiReact, label: 'React Native', group: 'Mobile' },
   { icon: SiBluetooth, label: 'Bluetooth', group: 'general' },

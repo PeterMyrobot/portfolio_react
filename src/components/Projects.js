@@ -1,7 +1,10 @@
 import Project from './Project';
+import { useState } from 'react';
+
 import life from '../../public/images/projects/life.png';
 import hulu from '../../public/images/projects/hulu.png';
 import metaverse from '../../public/images/projects/metaverse.png';
+import { AiFillLeftSquare, AiFillRightSquare } from 'react-icons/ai';
 
 const projectList = [
   {
@@ -61,11 +64,23 @@ const projectList = [
 ];
 
 function Projects() {
+  const [curIdx, setCurIdx] = useState(0);
   return (
-    <div className="flex flex-col justify-around md:flex-row md:flex-wrap bg-c1 p-6">
-      <h1 className="text-xl sm:text-2xl font-medium text-c2 border-l-2 border-c4 pl-4 mb-2">
+    <div className="flex flex-col justify-around bg-c1 p-6">
+      <h1 className="text-xl sm:text-2xl font-medium text-c2 border-l-2 border-c4 pl-4 mb-2 sm:text-center sm:border-l-0 ">
         Projects
       </h1>
+      <div className="flex flex-row justify-center items-center">
+        <div>
+          <AiFillLeftSquare size={30} />
+        </div>
+        <div>
+          <Project />
+        </div>
+        <div>
+          <AiFillRightSquare size={30} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Header() {
+function Header({ isLanding = false }) {
   // const [navStyle, setnavStyle] = useState('bg-blue-300');
 
   // const handleScroll = () => {
@@ -20,26 +20,19 @@ function Header() {
   //     handleScroll();
   //   });
   // });
-  const [isDesktop, setDesktop] = useState(false);
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
   return (
-    <div className={`sticky top-0 z-50 flex sm:bg-c2/25 h-8 w-full items-center justify-center`}>
-      {isDesktop && (
-        <div className="space-x-10">
-          <button>Home</button>
-          <button>ABOUT ME</button>
-          <button>WORK</button>
-          <button>PROJECT</button>
-        </div>
-      )}
+    <div
+      className={`sticky top-0 z-50 flex ${
+        isLanding ? 'bg-c2/25' : 'bg-c4'
+      } h-8 w-full items-center justify-center`}
+    >
+      <div className="space-x-10">
+        <button>Home</button>
+        <button>ABOUT ME</button>
+        <button>WORK</button>
+        <button>PROJECT</button>
+      </div>
     </div>
   );
 }
