@@ -92,7 +92,11 @@ function StarCanvas() {
 
   useEffect(() => {
     handleResize();
-    makeStar(100);
+    if (window.innerWidth < 800) {
+      makeStar(40);
+    } else {
+      makeStar(100);
+    }
     window.addEventListener('resize', handleResize);
     requestIdRef.current = requestAnimationFrame(tick);
     return () => {

@@ -9,20 +9,6 @@ module.exports = {
         c3: '#9E4770',
         c4: '#f42c04',
       },
-      height: {
-        '400px': '400px',
-        '200px': '200px',
-        '130px': '130px',
-        '60px': '60px',
-      },
-      width: {
-        '350px': '350px',
-        '130px': '130px',
-        '60px': '60px',
-      },
-      margin: {
-        '10px': '10px',
-      },
       animation: {
         'wiggle-slow': 'wiggle 3s linear infinite',
         'x-scrolling': 'slider 40s linear infinite',

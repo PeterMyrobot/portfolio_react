@@ -24,14 +24,14 @@ function Header({ isLanding = false }) {
   return (
     <div
       className={`sticky top-0 z-50 flex ${
-        isLanding ? 'bg-c2/25' : 'bg-c4'
+        isLanding ? 'bg-c1 border-b-2 border-c4' : 'bg-c2/25'
       } h-8 w-full items-center justify-center`}
     >
-      <div className="space-x-10">
-        <button>Home</button>
-        <button>ABOUT ME</button>
-        <button>WORK</button>
-        <button>PROJECT</button>
+      <div className="space-x-10 text-c2">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#work">WORK</a>
+        <a href="#project">PROJECT</a>
       </div>
     </div>
   );

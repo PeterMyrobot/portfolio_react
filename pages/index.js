@@ -16,14 +16,14 @@ export default function Home() {
   });
 
   return (
-    <div className="bg-bluedark font-mono w-full">
+    <div className="bg-bluedark font-mono w-full scroll-smooth">
       <Head>
         <title>Peter's Web Lab</title>
       </Head>
+      <div className=" h-0" ref={ref} />
       <Header isLanding={!inView} />
       <Landling />
       <About />
-      <div className=" h-0" ref={ref} />
       <Skills />
       <WorkExperience />
       <Projects />

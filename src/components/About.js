@@ -3,7 +3,7 @@ import Me from '../../public/images/me.jpg';
 
 function About() {
   return (
-    <div className="w-full bg-c1">
+    <section id="about" className="w-full bg-c1">
       <div className="grid grid-cols-4 md:grid-cols-6 ">
         <div className="hidden md:flex justify-center items-center col-span-1 md:col-span-2 bg-raisinblacklight">
           <div className="relative h-52 w-52 ">
@@ -31,19 +31,21 @@ function About() {
               </p>
               <ul className="text-sm sm:text-xl text-bluedark">
                 <li>Peter yang </li>
-                <li>123 Dev Lane</li>
-                <li>London </li>
+                <li>Taipei, Taiwan </li>
                 <li>+886 961296288</li>
                 <li>weiyang2016@gmail.com</li>
               </ul>
             </div>
-            <div className="flex bg-bluedark h-9 cursor-pointer text-c2 leading-9 px-3 max-w-xs my-4">
+            <a
+              className="flex bg-bluedark h-9 cursor-pointer text-c2 leading-9 px-3 max-w-xs my-4"
+              href="https://docs.google.com/uc?export=download&id=1YmF9ca2K309Hl0D4jHM9EbLTjpkeD5CT"
+            >
               DOWNLOAD RESSUME
-            </div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
