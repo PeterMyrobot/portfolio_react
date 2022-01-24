@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    'swiper-button-next': { color: 'red' },
     extend: {
       colors: {
         bluedark: '#031926',
